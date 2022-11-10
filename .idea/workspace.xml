@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d10caa7-1ab3-4453-b856-9dea726c9fd3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="2GwgOuKwQ0QZn33XNFx3GQpIK6l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="GlassFish Server.gllocal">
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings />
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings />
+        </file>
+      </deployment>
+      <server-settings>
+        <data>
+          <option name="adminServerHost" value="" />
+          <option name="clusterName" value="" />
+          <option name="stagingRemotePath" value="" />
+          <option name="transportHostId" />
+          <option name="transportStagingTarget">
+            <TransportTarget>
+              <option name="id" value="0b36b45b-4c5b-4301-926c-432de4b6e5b3" />
+              <id>0b36b45b-4c5b-4301-926c-432de4b6e5b3</id>
+            </TransportTarget>
+          </option>
+          <admin-server-host />
+          <cluster-name />
+          <transport-target>
+            <TransportTarget>
+              <option name="id" value="0b36b45b-4c5b-4301-926c-432de4b6e5b3" />
+              <id>0b36b45b-4c5b-4301-926c-432de4b6e5b3</id>
+            </TransportTarget>
+          </transport-target>
+          <staging-path />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64574" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glassfish" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings />
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gllocal" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WeLoveTrump/index.jsp" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="contextRoot" value="/WeLoveTrump" />
+            <option name="defaultContextRoot" value="false" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="true" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WeLoveTrump/index.jsp" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/WeLoveTrump" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_WeLoveTrump" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64554" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="GlassFish Server.gllocal" />
+      <item itemvalue="GlassFish Server.glassfish" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d10caa7-1ab3-4453-b856-9dea726c9fd3" name="Default Changelist" comment="" />
+      <created>1667305032045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667305032045</updated>
+      <workItem from="1667305033150" duration="2274000" />
+      <workItem from="1667313917924" duration="26319000" />
+      <workItem from="1667814962354" duration="2756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2480" y="275" key="#Deployment" timestamp="1667387574579">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2480" y="275" key="#Deployment/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667387574579" />
+    <state x="2789" y="526" key="#Glassfish_Server" timestamp="1667390466138">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2789" y="526" key="#Glassfish_Server/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667390466138" />
+    <state x="2796" y="498" key="#Tomcat_Server" timestamp="1667387705182">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2796" y="498" key="#Tomcat_Server/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667387705182" />
+    <state x="896" y="25" width="896" height="1010" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1667400933795">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state x="896" y="25" width="896" height="1010" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1010@0.25.1792.1010" timestamp="1667400933795" />
+    <state x="2480" y="222" width="1071" height="978" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667390979726" />
+    <state x="2732" y="260" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1667390891815">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2732" y="260" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667390891815" />
+    <state width="1294" height="333" key="GridCell.Tab.0.bottom" timestamp="1667583188933">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.0.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1667583188933" />
+    <state width="1294" height="333" key="GridCell.Tab.0.bottom/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667391344552" />
+    <state width="1294" height="333" key="GridCell.Tab.0.center" timestamp="1667583188932">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.0.center/0.25.1792.1010@0.25.1792.1010" timestamp="1667583188932" />
+    <state width="1294" height="333" key="GridCell.Tab.0.center/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667391344550" />
+    <state width="1294" height="333" key="GridCell.Tab.0.left" timestamp="1667583188932">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.0.left/0.25.1792.1010@0.25.1792.1010" timestamp="1667583188932" />
+    <state width="1294" height="333" key="GridCell.Tab.0.left/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667391344549" />
+    <state width="1294" height="333" key="GridCell.Tab.0.right" timestamp="1667583188933">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.0.right/0.25.1792.1010@0.25.1792.1010" timestamp="1667583188933" />
+    <state width="1294" height="333" key="GridCell.Tab.0.right/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667391344551" />
+    <state width="1294" height="333" key="GridCell.Tab.1.bottom" timestamp="1667400969690">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.1.bottom/0.25.1792.1010@0.25.1792.1010" timestamp="1667400969690" />
+    <state width="1294" height="333" key="GridCell.Tab.1.center" timestamp="1667400969689">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.1.center/0.25.1792.1010@0.25.1792.1010" timestamp="1667400969689" />
+    <state width="1294" height="333" key="GridCell.Tab.1.left" timestamp="1667400969689">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.1.left/0.25.1792.1010@0.25.1792.1010" timestamp="1667400969689" />
+    <state width="1294" height="333" key="GridCell.Tab.1.right" timestamp="1667400969690">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state width="1294" height="333" key="GridCell.Tab.1.right/0.25.1792.1010@0.25.1792.1010" timestamp="1667400969690" />
+    <state width="237" height="457" key="HiddenNamespacesPopup" timestamp="1667384864874">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state width="237" height="457" key="HiddenNamespacesPopup/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667384864874" />
+    <state x="2786" y="493" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1667385359181">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2786" y="493" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667385359181" />
+    <state x="858" y="421" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1667583183655">
+      <screen x="0" y="25" width="1792" height="1010" />
+    </state>
+    <state x="858" y="421" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.25.1792.1010@0.25.1792.1010" timestamp="1667583183655" />
+    <state x="2744" y="354" width="527" height="516" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1667314375062">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2744" y="354" width="527" height="516" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667314375062" />
+    <state x="658" y="313" width="602" height="490" key="find.popup" timestamp="1667411117809">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="658" y="313" width="602" height="490" key="find.popup/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@0.25.1920.1175" timestamp="1667411117809" />
+    <state x="2545" y="285" key="run.anything.popup" timestamp="1667386523260">
+      <screen x="1920" y="25" width="1920" height="1175" />
+    </state>
+    <state x="2545" y="285" key="run.anything.popup/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@1920.25.1920.1175" timestamp="1667386523260" />
+    <state x="624" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1667411122442">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="624" y="276" width="670" height="676" key="search.everywhere.popup/0.25.1920.1175/1920.25.1920.1175/976.1225.1792.1010@0.25.1920.1175" timestamp="1667411122442" />
+  </component>
+</project>
