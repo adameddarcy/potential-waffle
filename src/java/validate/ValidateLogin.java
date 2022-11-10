@@ -49,13 +49,11 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
                                         Cookie privilege=new Cookie("privilege", getMD5(user));
-//                                        privilege.setPath("; HttpOnly;");
                                         privilege.setHttpOnly(true);
                                         privilege.setSecure(true);
                                         response.addCookie(privilege);
                                         response.sendRedirect("members.jsp");
-                                   }
-                                    
+                                   }                                 
                                }
                 }
                catch(Exception ex)
