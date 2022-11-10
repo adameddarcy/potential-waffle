@@ -14,6 +14,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Date;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -48,7 +49,7 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("userid", rs.getString("id"));
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
-                                        Cookie privilege=new Cookie("privilege", getMD5(user));
+                                        Cookie privilege=new Cookie("privilege", UUID.randomUUID().toString());
                                         privilege.setHttpOnly(true);
                                         privilege.setSecure(true);
                                         response.addCookie(privilege);
@@ -63,34 +64,7 @@ public class ValidateLogin extends HttpServlet {
         
         
     }
-    
-    private String getMD5(String user) {
 
-        MessageDigest mdAlgorithm = null;
-        try {
-            mdAlgorithm = MessageDigest.getInstance("MD5");
-        } catch (NoSuchAlgorithmException ex) {
-            Logger.getLogger(ValidateLogin.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        mdAlgorithm.update(user.getBytes());
-
-        byte[] digest = mdAlgorithm.digest();
-        StringBuffer hexString = new StringBuffer();
-
-        for (int i = 0; i < digest.length; i++) {
-            user = Integer.toHexString(0xFF & digest[i]);
-
-            if (user.length() < 2) {
-                user = "0" + user;
-            }
-
-            hexString.append(user);
-        }
-
-return hexString.toString();
-
-        
-    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
