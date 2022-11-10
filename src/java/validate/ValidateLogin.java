@@ -13,6 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -48,6 +49,9 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
                                         Cookie privilege=new Cookie("privilege", getMD5(user));
+//                                        privilege.setPath("; HttpOnly;");
+                                        privilege.setHttpOnly(true);
+                                        privilege.setSecure(true);
                                         response.addCookie(privilege);
                                         response.sendRedirect("members.jsp");
                                    }
