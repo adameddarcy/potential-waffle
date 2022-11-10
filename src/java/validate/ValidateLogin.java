@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -23,6 +24,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.security.NoSuchAlgorithmException;
 
 /**
  *
@@ -49,7 +51,7 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("userid", rs.getString("id"));
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
-                                        Cookie privilege=new Cookie("privilege", UUID.randomUUID().toString());
+                                        Cookie privilege=new Cookie("privilege", secureCookie());
                                         privilege.setHttpOnly(true);
                                         privilege.setSecure(true);
                                         response.addCookie(privilege);
@@ -61,8 +63,20 @@ public class ValidateLogin extends HttpServlet {
                 {
                            response.sendRedirect("login.jsp");
                  }
-        
-        
+    }
+    
+    private static String secureCookie() {
+        byte[] nonce = new byte[20];
+        new SecureRandom().nextBytes(nonce);
+        return convertBytesToHex(nonce);
+    }
+    
+    private static String convertBytesToHex(byte[] bytes) {
+        StringBuilder result = new StringBuilder();
+        for (byte temp : bytes) {
+            result.append(String.format("%02x", temp));
+        }
+        return result.toString();
     }
 
 
