@@ -1,3 +1,5 @@
+<%@page import="org.jsoup.Jsoup"%>
+<%@page import="org.jsoup.safety.Safelist"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="dbconnection.DBConnect"%>
@@ -50,6 +52,9 @@
                         String user = request.getParameter("user");
                         String content = request.getParameter("content");
                         String title = request.getParameter("title");
+                        user = Jsoup.clean(user, Safelist.basic());
+                        content = Jsoup.clean(content, Safelist.basic());
+                        title = Jsoup.clean(title, Safelist.basic());
 
                 %>
                 <%        if (con != null && !con.isClosed()) {

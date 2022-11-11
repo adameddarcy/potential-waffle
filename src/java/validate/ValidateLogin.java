@@ -12,6 +12,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Date;
@@ -37,16 +38,21 @@ public class ValidateLogin extends HttpServlet {
         String user=request.getParameter("username").trim();
         String pass=request.getParameter("password").trim();
         
+        String query = "select * from users where username = ? and password = ?";
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        
         try
              {
                  Connection con=new DBConnect().connect(getServletContext().getRealPath("/WEB-INF/config.properties"));
                     if(con!=null && !con.isClosed())
                                {
-                                   ResultSet rs=null;
-                                   Statement stmt = con.createStatement();  
-                                   rs=stmt.executeQuery("select * from users where username='"+user+"' and password='"+pass+"'");
+                                   stmt = con.prepareStatement(query);
+                                   stmt.setString(1, user);
+                                   stmt.setString(2, pass);
+                                   ResultSet rs = stmt.executeQuery();
                                    if(rs != null && rs.next()){
-                                        HttpSession session=request.getSession();
+                                   HttpSession session=request.getSession();
                                         session.setAttribute("userid", rs.getString("id"));
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
@@ -60,7 +66,7 @@ public class ValidateLogin extends HttpServlet {
                 }
                catch(Exception ex)
                 {
-                           response.sendRedirect("login.jsp");
+                           response.sendRedirect("failedLogin.jsp");
                  }
     }
     
