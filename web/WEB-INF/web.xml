@@ -28,12 +28,17 @@
         <error-code>404</error-code>
         <location>/Error.jsp</location>
     </error-page>
-        <error-page>
+    <error-page>
         <error-code>500</error-code>
         <location>/Error.jsp</location>
     </error-page>
-    <context-param>
-    <param-name>com.sun.faces.sendPoweredByHeader</param-name>
-    <param-value>false</param-value>
-</context-param>
+    <security-constraint>
+      <web-resource-collection>
+        <web-resource-name>Viewpoint Secure URLs</web-resource-name>
+        <url-pattern>/*</url-pattern>
+      </web-resource-collection>
+      <user-data-constraint>
+        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+      </user-data-constraint>
+    </security-constraint>
 </web-app>

@@ -7,25 +7,16 @@ package validate;
 
 import dbconnection.DBConnect;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.Date;
-import java.util.UUID;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.xml.registry.infomodel.User;
 
 /**
  *
@@ -40,7 +31,6 @@ public class ValidateLogin extends HttpServlet {
         String pass=request.getParameter("password").trim();
         
         String query = "select * from users where username = ? and password = ?";
-        Connection conn = null;
         PreparedStatement stmt = null;
         
         try
@@ -57,10 +47,15 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("userid", rs.getString("id"));
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
-                                        Cookie privilege=new Cookie("privilege", secureCookie());
-                                        privilege.setHttpOnly(true);
-                                        privilege.setSecure(true);
-                                        response.addCookie(privilege);
+//                                        Cookie privilege=new Cookie("privilege", secureCookie());
+                                        String cookie = "privilege="+secureCookie();
+//                                        privilege.setHttpOnly(true);
+//                                        privilege.setSecure(true);
+                                        response.addHeader("Set-Cookie", cookie+"; HttpOnly; Secure; SameSite=strict");
+//                                        response.addCookie(privilege);
+                                        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, X-Csrf-Token, WWW-Authenticate, Authorization");
+                                        response.setHeader("Access-Control-Allow-Credentials", "false");
+                                        response.setHeader("Content-Security-Policy", "self");
                                         response.sendRedirect("members.jsp");
                                    }                                 
                                }

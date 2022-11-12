@@ -41,6 +41,7 @@
         
 		<div id="content">
         	<form action="ValidateLogin" method="post">
+                    <sec:csrfInput />
             <table> 
                 <tr><td>UserName: </td><td><input type="text" name="username" value="<%=username%>" /></td></tr>
                 <tr><td>Password :</td><td><input type="text" name="password" value="<%=password%>"/></td></tr>
