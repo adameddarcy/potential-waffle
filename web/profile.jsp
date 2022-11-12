@@ -39,11 +39,11 @@
                     if (session.getAttribute("isLoggedIn") != null) {
                         Connection con = new DBConnect().connect(getServletContext().getRealPath("/WEB-INF/config.properties"));
 
-                        String id = request.getParameter("id");
+                        String id = '"'+request.getParameter("id").toString() + '"';
                         if (id != null && !id.equals("")) {
                             Statement stmt = con.createStatement();
                             ResultSet rs = null;
-                            rs = stmt.executeQuery("select * from users where id=" + id);
+                            rs = stmt.executeQuery("select * from users where id="+id);
                             if (rs != null && rs.next()) {
                                 out.print("UserName : " + rs.getString("username") + "<br>");
                                 out.print("Email : " + rs.getString("email") + "<br>");
