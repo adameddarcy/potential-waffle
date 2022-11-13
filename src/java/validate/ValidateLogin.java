@@ -47,12 +47,8 @@ public class ValidateLogin extends HttpServlet {
                                         session.setAttribute("userid", rs.getString("id"));
                                         session.setAttribute("user", rs.getString("username"));
                                         session.setAttribute("isLoggedIn", "1");
-//                                        Cookie privilege=new Cookie("privilege", secureCookie());
                                         String cookie = "privilege="+secureCookie();
-//                                        privilege.setHttpOnly(true);
-//                                        privilege.setSecure(true);
                                         response.addHeader("Set-Cookie", cookie+"; HttpOnly; Secure; SameSite=strict");
-//                                        response.addCookie(privilege);
                                         response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, X-Csrf-Token, WWW-Authenticate, Authorization");
                                         response.setHeader("Access-Control-Allow-Credentials", "false");
                                         response.setHeader("Content-Security-Policy", "self");

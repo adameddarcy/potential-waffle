@@ -7,6 +7,11 @@
     </head>
 
     <body>
+        <%
+                                        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, X-Csrf-Token, WWW-Authenticate, Authorization");
+                                        response.setHeader("Access-Control-Allow-Credentials", "false");
+                                        response.setHeader("Content-Security-Policy", "frame-ancestors 'none';");
+        %>
         <div id="container">
             <div id="mainpic">         
             </div>   

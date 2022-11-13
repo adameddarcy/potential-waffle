@@ -36,6 +36,7 @@
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <%
+                    String authenticatedUser = session.getAttribute("user").toString();
                     if (session.getAttribute("isLoggedIn") != null) {
                         Connection con = new DBConnect().connect(getServletContext().getRealPath("/WEB-INF/config.properties"));
 
@@ -44,8 +45,9 @@
                             Statement stmt = con.createStatement();
                             ResultSet rs = null;
                             rs = stmt.executeQuery("select * from users where id="+id);
-                            if (rs != null && rs.next()) {
-                                out.print("UserName : " + rs.getString("username") + "<br>");
+//                            boolean auth = authenticatedUser.equals(rs.getString("username"));
+                            if (rs != null && rs.next() && authenticatedUser.equals(rs.getString("username"))) {
+                                out.print("UserName : " + rs.getString("username") + "=" + authenticatedUser + "<br>");
                                 out.print("Email : " + rs.getString("email") + "<br>");
                                 out.print("About : " + rs.getString("about") + "<br>");
 
@@ -57,10 +59,11 @@
                                     out.print("CVV: " + rs1.getString("cvv") + "<br/>");
                                     out.print("Expiry Date: " + rs1.getString("expiry") + "<br/>");
                                 }
-
                             }
-                        } else {
-                            out.print("ID Parameter is Missing");
+                            else {
+                                    session.invalidate();  
+                                    response.sendRedirect("index.jsp");
+                                }
                         }
 
                     } else {
