@@ -1,5 +1,8 @@
+<%@page import="org.jsoup.Jsoup"%>
+<%@page import="org.jsoup.safety.Safelist"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="dbconnection.DBConnect"%>
 <%@page import="java.sql.Connection"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -50,11 +53,18 @@
                         String user = request.getParameter("user");
                         String content = request.getParameter("content");
                         String title = request.getParameter("title");
+                        user = Jsoup.clean(user, Safelist.basic());
+                        content = Jsoup.clean(content, Safelist.basic());
+                        title = Jsoup.clean(title, Safelist.basic());
 
                 %>
                 <%        if (con != null && !con.isClosed()) {
-                            Statement stmt = con.createStatement();
-                            stmt.executeUpdate("INSERT into posts(content,title,user) values ('" + content + "','" + title + "','" + user + "')");
+                            String query = "INSERT into posts(content,title,user) values (?,?,?)";
+                            PreparedStatement stmt = con.prepareStatement(query);
+                            stmt.setString(1, content);
+                            stmt.setString(2, title);
+                            stmt.setString(3, user);
+                            stmt.executeQuery();
                             out.print("Successfully posted");
                         }
                     }

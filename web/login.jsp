@@ -3,19 +3,15 @@
  <%
  String username="";
  String password="";
- Cookie[] cookies = request.getCookies();
- if (cookies != null)
-  for (Cookie c : cookies) {
-        if ("username".equals(c.getName())) {
-         username= c.getValue();
-        }
-        else if("password".equals(c.getName()))
-        {
-            password= c.getValue();
-        }
-  }
-
  %>
+ 
+ <%
+                                        response.setHeader("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, X-Csrf-Token, WWW-Authenticate, Authorization");
+                                        response.setHeader("Access-Control-Allow-Credentials", "false");
+                                        response.setHeader("X-Content-Type-Options", "nosniff");
+                                        response.setHeader("Content-Security-Policy", "frame-ancestors 'none';");
+    
+        %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -41,6 +37,7 @@
         
 		<div id="content">
         	<form action="ValidateLogin" method="post">
+                    <sec:csrfInput />
             <table> 
                 <tr><td>UserName: </td><td><input type="text" name="username" value="<%=username%>" /></td></tr>
                 <tr><td>Password :</td><td><input type="text" name="password" value="<%=password%>"/></td></tr>

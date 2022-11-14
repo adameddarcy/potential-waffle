@@ -34,6 +34,7 @@
             <div id="content">
                 <h3>Create Post:</h3>
                 <form action="forum.jsp" method="POST">
+                    <sec:csrfInput />
                     Title : <input type="text" name="title" value="" size="50"/><br/>
                     Message: <br/><textarea name="content" rows="2" cols="50"></textarea>
                     <input type="hidden" name="user" value="<% if (session.getAttribute("user") != null) {

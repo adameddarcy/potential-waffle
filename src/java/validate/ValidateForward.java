@@ -8,6 +8,7 @@ package validate;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -30,13 +31,22 @@ public class ValidateForward extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        String[] allowList = {
+            "index.jsp",
+            "quotes.jsp",
+            "new.jsp",
+            "login.jsp"
+        };
         try {
            if(request.getParameter("location")!=null)
             {
                 String location=request.getParameter("location");
-                //Forwarding
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(location);
+                if (isValidForward(location, allowList)) {
+                    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(location);
                 dispatcher.forward(request,response);
+                } else {
+                    out.print("This is not a valid location");
+                }
             }
             else
             {
@@ -45,6 +55,10 @@ public class ValidateForward extends HttpServlet {
         } finally {
             out.close();
         }
+    }
+    
+    private static boolean isValidForward(String input, String[] allowed) {
+        return Arrays.stream(allowed).anyMatch(input::contains);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
